@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express()
 const pokeRouter = require('./router/pokemon')
+const genRouter = require('./router/geração')
 
 app.set('views', './views');
 app.set('view engine', 'ejs')
 
 app.use("/pokemon", pokeRouter)
+app.use("/generation", genRouter)
 
 app.use(express.static('public'))
 
