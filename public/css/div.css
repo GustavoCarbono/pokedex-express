@@ -1,0 +1,16 @@
+body{
+    background-color: gray;
+    display: flex;
+}
+
+div{
+    background-color: rgb(233, 233, 233);
+    width: 10%;
+}
+
+section{
+    margin: 0;
+    background-color: white;
+    top: 20px;
+    width: 100%;
+}
