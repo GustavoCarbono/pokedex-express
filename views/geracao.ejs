@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="/css/text.css">
 </head>
 <body>
-    <section>
+    <section class="section-Gen">
         <% for( let i = 0; i < count; i++ ) { %>
             <div class="<%= pokemon[i].type[0] %>">
-                <a href="">
+                <a href="../pokemon/<%= i+1 %>">
                     <img src="<%= pokemon[i].img %>">
                     <div class="pokeDiv">
                         <h2><%= pokemon[i].name %></h2>
-                        <p>
-                            <%= pokemon[i].type[0]%>
+                        <section class="section-Type">
+                            <div class="<%= pokemon[i].type[0] %>"><%= pokemon[i].type[0]%></div>
                             <% if (pokemon[i].secondType == true) {%>
-                            <%=", " + pokemon[i].type[1]%>
+                            <div class="<%= pokemon[i].type[1] %>"><%= pokemon[i].type[1]%></div>
                             <% } %>
-                        </p>
+                        </section>
                     </div>
                 </a>
             </div>

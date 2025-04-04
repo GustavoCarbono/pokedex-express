@@ -32,21 +32,21 @@ function getGen(numGen) {
                 geracao: "Geração I",
                 pokemon: []
             }
-            geracao = getGeracao(geracao, 1, 151)
+            geracao = getGeracao(geracao, 1, 10)
             break
         case 2:
             var geracao = {
                 geracao: "Geração II",
                 pokemon: []
             }
-            geracao = getGeracao(geracao, 1, 151)
+            geracao = getGeracao(geracao, 152, 251)
             break
         case 3:
             var geracao = {
                 geracao: "Geração III",
                 pokemon: []
             }
-            geracao = getGeracao(geracao, 1, 151)
+            geracao = getGeracao(geracao, 252, 260)
             break
         case 4:
             var geracao = {
