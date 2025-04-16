@@ -9,12 +9,13 @@
 </head>
 <body>
     <section class="section-Gen">
+        <% console.log(geracao) %>
         <% for( let i = 0; i < count; i++ ) { %>
             <div class="<%= pokemon[i].type[0] %>">
                 <a href="../pokemon/<%= i+1 %>">
                     <img src="<%= pokemon[i].img %>">
                     <div class="pokeDiv">
-                        <h2><%= pokemon[i].name %></h2>
+                        <h3><%= pokemon[i].name %></h3>
                         <section class="section-Type">
                             <div class="<%= pokemon[i].type[0] %>"><%= pokemon[i].type[0]%></div>
                             <% if (pokemon[i].secondType == true) {%>

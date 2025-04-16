@@ -4,8 +4,7 @@ const {getGen} = require('../funcExterna/getGen')
 
 
 router.get('/:generation', (req, res) => {
-    
-    let x = getGen(1)
+    let x = getGen(parseInt(req.params.generation))
     let pokemon = Promise.all(x.pokemon)
     
 
